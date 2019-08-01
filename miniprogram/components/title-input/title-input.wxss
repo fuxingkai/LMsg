@@ -1,0 +1,34 @@
+.container, .bottom_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  color: #09bb07;
+  font-size: 28rpx;
+  flex-shrink: 1;
+  margin-bottom: 20rpx;
+}
+
+.content {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  text-align: left;
+  font-weight: normal;
+  border-radius: 10rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  box-sizing: border-box;
+  background-color: #e6e6e6;
+  color: rgba(51, 51, 51, 1);
+}

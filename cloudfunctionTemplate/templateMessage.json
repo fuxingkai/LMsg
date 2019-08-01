@@ -1,0 +1,24 @@
+[
+  {
+    "name": "添加表单id",
+    "value": {
+      "formId": "formId",
+      "action": "addFormId"
+    }
+  },
+  {
+    "name": "模板消息",
+    "value": {
+      "action": "sendCommentTemplateMessage",
+      "sendData": {
+        "templateId": "ZKRVcQirsfovB2DNLG7-JWtqCgslM8aYL6fLScW_CxY",
+        "ctId": "1",
+        "touser": "touser",
+        "title": "title",
+        "fromName": "fromName",
+        "createTime": "createTime",
+        "content": "createTime"
+      }
+    }
+  }
+]

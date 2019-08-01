@@ -1,0 +1,6 @@
+<view class="container">
+    <canvas canvas-id="{{canvasData.canvasId}}" class="canvas_container"  style="width:{{canvasData.canvasWidth}}rpx;height:{{canvasData.canvasHeight}}rpx;" ></canvas>
+    <view class="save_btn" style="color:{{canvasData.color}};" bindtap="onClickSave">
+        保存到相册
+    </view>
+</view>

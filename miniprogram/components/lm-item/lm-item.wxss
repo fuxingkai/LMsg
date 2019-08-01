@@ -1,0 +1,147 @@
+.container, .top_container, .title_container,.reply_container_input,.reply_container,.bottom_btn_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+.top_container {
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 15rpx;
+}
+
+.headimg {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 15rpx;
+  border-radius: 120rpx;
+  flex-shrink: 0;
+}
+
+.title_container {
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.title {
+  width: 100%;
+  color: #666666;
+  font-size: 28rpx;
+  margin-bottom: 15rpx;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.time {
+  color: #999999;
+  font-size: 18rpx;
+}
+
+.common_icon {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 15rpx;
+  flex-shrink: 0;
+}
+
+.content {
+  width: 100%;
+  margin-left: 95rpx;
+  font-size: 24rpx;
+  color: #777777;
+  margin-bottom: 15rpx;
+}
+
+.reply_container_input {
+  width: 100%;
+  flex-direction: column;
+  padding-left: 95rpx;
+  box-sizing: border-box;
+}
+
+.reply_container{
+  width: 100%;
+  flex-direction: column;
+  padding-left: 95rpx;
+  box-sizing: border-box;
+}
+
+.triangle_border_up {
+  width: 0;
+  height: 0;
+  border-width: 0 15rpx 15rpx;
+  border-style: solid;
+  margin-left: 30rpx;
+  border-color: transparent transparent #eeeeee;
+}
+
+.reply_content_input{
+  width: 100%;
+  height: 180rpx;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 10rpx;
+  font-size: 24rpx;
+  color: #666666;
+}
+
+.reply_content{
+  width: 100%;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 10rpx;
+  font-size: 24rpx;
+  color: #666666;
+}
+
+.placeholder_class{
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.bottom_btn_container{
+  justify-content:flex-end;
+  width: 100%;
+  height: 45rpx;
+  margin-top: 15rpx;
+}
+
+.cancel{
+  height: 45rpx;
+  font-size: 20rpx;
+  line-height: 45rpx;
+  border-color: #09bb07;
+  border-width: 1rpx;
+  color: #09bb07;
+  background-color: #ffffff;
+  border-style: solid;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  box-sizing: border-box;
+}
+
+.send{
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 20rpx;
+  margin-left: 30rpx;
+  color: #ffffff;
+  padding-left: 25rpx;
+  padding-right: 25rpx;
+  background-color: #09bb07;
+  box-sizing: border-box;
+}
+
+.line_1 {
+  height: 1rpx;
+  background-color: #f6f6f6;
+}

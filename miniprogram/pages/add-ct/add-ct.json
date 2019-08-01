@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "title-input": "/components/title-input/title-input"
+  },
+  "navigationBarTitleText": "添加留言区",
+  "backgroundColor": "#F6F6F6"
+}

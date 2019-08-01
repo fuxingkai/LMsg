@@ -1,0 +1,16 @@
+[
+  {
+    "name": "登录请求",
+    "value": {
+      "action": "login",
+      "userInfo": {
+        "nickName": "NICKNAME",
+        "gender": 0,
+        "city": "CITY",
+        "province": "PROVINCE",
+        "country": "COUNTRY",
+        "avatarUrl": "AVATARURL"
+      }
+    }
+  }
+]

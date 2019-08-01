@@ -1,0 +1,11 @@
+<form report-submit="true" bindsubmit="formSubmit">
+<view class="container">
+    <view class="header_container">
+        <image class="header_img" src="{{'/images/sn_logo.png'}}" />
+        <view class="header_text">摆渡留言</view>
+    </view>
+    <button class="btn_container" form-type="submit" bindgetuserinfo="onClickAuth" openType="getUserInfo" >  
+        <view class="btn_text">微信登录</view>
+    </button>
+</view>
+</form>

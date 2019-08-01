@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "留言区详情",
+  "usingComponents": {
+    "common-list": "/components/common-list/common-list",
+    "lm-item": "/components/lm-item-d/lm-item-d"
+  },
+  "backgroundColor": "#F6F6F6"
+}

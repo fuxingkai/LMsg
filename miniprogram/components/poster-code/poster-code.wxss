@@ -1,0 +1,20 @@
+.container, {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  flex-direction: column;
+}
+
+
+.save_btn {
+  font-size: 30rpx;
+  margin-top: 30rpx;
+  padding-right: 20rpx;
+  text-align: right;
+}
+

@@ -1,0 +1,8 @@
+  <!-- <view class="dialog-layer" wx:if="{{isShowAuthDialog}}"></view>
+  <view class="dialog-wrapper" wx:if="{{isShowAuthDialog}}">
+      <view class="hd">
+          <icon size="50" type="success"></icon>
+          <view>点击授权并获取用户信息</view>
+      </view>
+      <button bindgetuserinfo="bindGetUserInfo" openType="getUserInfo" class="btn">授权</button>
+  </view> -->

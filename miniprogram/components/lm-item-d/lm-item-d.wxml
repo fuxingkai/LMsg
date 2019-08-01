@@ -1,0 +1,29 @@
+<view class="container" data-item="{{item}}" bindtap="onClickItem">
+  <view class="top_container">
+    <image class="headimg" src="{{item.headimg}}"></image>
+    <view class="title_container">
+      <view class="title">{{item.name}}</view>
+      <view class="isTop" wx:if="{{item.isTop}}">置顶</view>
+    </view>
+    <view class="like_container" id="commentLike" data-item="{{item}}" bindtap="onClickLike">
+      <image class="common_icon" src="{{item.isLike?'/images/icon_like_s.png':'/images/icon_like_n.png'}}"></image>
+      <view class="like">{{item.like}}</view>
+    </view>
+
+  </view>
+  <view class="content">{{item.content}}</view>
+  <view class="delete" data-item="{{item}}" bindtap="onClickDelete" wx:if="{{isMineComment}}">删除</view>
+  <view class="reply_container" wx:if="{{isHaseReply}}">
+    <view class="author_container">
+      <view class="v_line"></view>
+      <view class="author">作者</view>
+      <view class="like_container" id="replyLike" data-item="{{item}}" bindtap="onClickLike">
+        <image class="common_icon" src="{{item.reply.isLike?'/images/icon_like_s.png':'/images/icon_like_n.png'}}" ></image>
+        <view class="like">{{item.reply.like}}</view>
+      </view>
+
+    </view>
+    <view class='reply_content'>{{item.reply.content}}</view>
+  </view>
+</view>
+<view class="line_1" wx:if="{{showLine}}"></view>

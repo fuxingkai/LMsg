@@ -1,0 +1,15 @@
+<form report-submit="true" bindsubmit="formSubmit">
+  <view class="container">
+    <view class='title'>{{title}}</view>
+    <textarea class='content' value="{{content}}" bindinput="bindConentInput" placeholder-class="placeholder_class" placeholder="{{placeholder}}" />
+    <button class="btn_container" form-type="submit">
+      <view class="btn_text">留言</view>
+    </button>
+    <view class='lm_title_container' wx:if="{{lms.length>0}}">
+      <view class='lm_title'>我的留言</view>
+    </view>
+
+    <common-list id="common-list" class="list_container" list="{{lms}}" loadMore="{{loadMore}}" generic:list-item="lm-item" bindonClickListItem="onClickMoreListItem" />
+  </view>
+  <auth-dialog />
+</form>

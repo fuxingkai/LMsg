@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "common-list": "/components/common-list/common-list",
+    "lm-item": "/components/lm-item-d/lm-item-d",
+    "auth-dialog": "/components/auth-dialog/auth-dialog"
+  },
+  "navigationBarTitleText": "添加留言",
+  "backgroundColor": "#F6F6F6"
+}

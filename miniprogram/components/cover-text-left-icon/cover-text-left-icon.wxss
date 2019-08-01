@@ -1,0 +1,22 @@
+.container, .bottom_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  flex-direction: row;
+}
+
+.title {
+  color: #09bb07;
+  font-size: 28rpx;
+  margin-right: 15rpx;
+}
+
+.icon{
+  width: 32rpx;
+  height: 32rpx;
+}

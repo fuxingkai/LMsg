@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "auth-dialog":"/components/auth-dialog/auth-dialog"
+  },
+  "backgroundColor": "#F6F6F6"
+}

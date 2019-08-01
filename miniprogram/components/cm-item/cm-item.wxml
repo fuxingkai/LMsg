@@ -1,0 +1,7 @@
+<view class="container" data-item="{{item}}" bindtap="onClickItem">
+  <view class="title">{{item.content}}</view>
+  <view class="bottom_container">
+    <view class="number">{{item.createTime}}</view>
+  </view>
+</view>
+<view class="line_10" wx:if="{{showLine}}"></view>

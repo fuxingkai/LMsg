@@ -1,0 +1,15 @@
+<form report-submit="true" bindsubmit="formSubmit">
+  <view class="container">
+    <title-input class="title_input_container" title="{{'留言区标题'}}" bindonCall="onCallTitle" placeholder="{{'请输入留言区标题，推荐用要发表文章的标题'}}" />
+
+    <title-input class="title_input_container" title="{{'文章链接（可选）'}}" bindonCall="onCallActicleLink" placeholder="{{'请输入文章链接'}}" />
+
+    <title-input class="title_input_container" title="{{'公众号名称'}}" bindonCall="onCallWXPublicName" placeholder="{{'请输入公众号名称'}}" />
+
+    <title-input class="title_input_container" title="{{'描述（可选）'}}" bindonCall="onCallDes" placeholder="{{'请输入引导留言提示语'}}" />
+
+    <button class="btn_container" form-type="submit">
+      <view class="btn_text">保存</view>
+    </button>
+  </view>
+</form>

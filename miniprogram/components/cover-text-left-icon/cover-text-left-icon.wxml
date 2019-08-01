@@ -1,0 +1,4 @@
+<cover-view class="container" bindtap="onClickItem">
+  <cover-view class="title">{{title}}</cover-view>
+  <cover-image class="icon" src="{{icon}}"></cover-image>
+</cover-view>

@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="top_container">
+    <view class="title">{{title}}</view>
+    <view class="des">{{des}}</view>
+    <view class="path_des">小程序路径（用于插入小程序粘贴到小程序路径）</view>
+    <view class='path_container'>
+      <view class='path'>{{miniAppPath}}</view>
+      <view class='copy' bindtap='onClickCopyPath'>复制</view>
+    </view>
+    <view class="title_m">查看宣传海报</view>
+    <image class="default_poster_icon" src="{{defaultPosterIcon}}" bindtap='onClickDownloadPoster'></image>
+    <view class="download_poster" bindtap='onClickDownloadPoster'>点击下载小程序码</view>
+    <view class="public_title">公众号文章底部引导留言图片</view>
+  </view>
+  <poster-code id="posterCode" class="poster_code_container" canvasData="{{canvasData}}" />
+  <poster-code id="bluePosterCode" class="poster_code_container" canvasData="{{blueCanvasData}}" />
+  <poster-code id="greenPosterCode" class="poster_code_container" canvasData="{{greenCanvasData}}" />
+  <poster-code id="redPosterCode" class="poster_code_container" canvasData="{{redCanvasData}}" />
+  <view class='bottom'></view>
+  <cover-view class='bottom_container'>
+    <text-left-icon title="{{'预览'}}" icon="{{'/images/icon_preview.png'}}" bindonClickItem="onClickPreview" />
+    <text-left-icon title="{{'编辑'}}" icon="{{'/images/icon_edit.png'}}" bindonClickItem="onClickSetting" />
+    <button hover-class="none" open-type="share">
+      <text-left-icon title="{{'转发'}}" icon="{{'/images/icon_share.png'}}" bindonClickItem="onClickShare" />
+    </button>
+  </cover-view>
+</view>

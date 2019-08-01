@@ -1,0 +1,29 @@
+<view class="container">
+  <view class='top_container'>
+    <view class="title">{{title}}</view>
+    <view class="path_des">小程序路径（用于插入小程序粘贴到小程序路径）</view>
+    <view class='path_container'>
+      <view class='path'>{{miniAppPath}}</view>
+      <view class='copy' bindtap='onClickCopyPath'>复制</view>
+    </view>
+    <view class='des_container'>
+      <view class="des">共有</view>
+      <view class="number">{{look}}</view>
+      <view class="des">人浏览</view>
+      <view class="create" bindtap='onClickSetting'>嵌入公众号</view>
+    </view>
+    <view class="title_m">留言管理</view>
+  </view>
+  <view class="noread_title" wx:if="{{noReadLMs.length>0}}">{{noReadLMs.length}}条新留言</view>
+  <common-list id="common-list" class="noread_list_container" wx:if="{{noReadLMs.length>0}}" list="{{noReadLMs}}" loadMore="{{noReadLMsloadMore}}" generic:list-item="lm-item" bindonClickListItem="onClickNoReadListItem" />
+  <view class="read_title" wx:if="{{noReadLMs.length>0}}">已读留言</view>
+  <common-list id="common-list" class="list_container" list="{{lms}}" loadMore="{{loadMore}}" generic:list-item="lm-item" bindonClickListItem="onClickListItem" />
+  <view class='bottom_container'>
+    <text-left-icon title="{{'预览'}}" icon="{{'/images/icon_preview.png'}}" bindonClickItem="onClickPreview" />
+    <text-left-icon title="{{'配置'}}" icon="{{'/images/icon_setting.png'}}" bindonClickItem="onClickSetting" />
+    <button hover-class="none" open-type="share" >
+      <text-left-icon title="{{'转发'}}" icon="{{'/images/icon_share.png'}}" bindonClickItem="onClickShare" />
+    </button>
+
+  </view>
+</view>

@@ -1,0 +1,16 @@
+button {
+  display: flex;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  background-color: transparent;
+}
+
+button::after {
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  background-color: transparent;
+}

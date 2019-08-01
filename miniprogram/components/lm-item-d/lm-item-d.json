@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "button-to-view-submit": "/components/button-to-view-submit/button-to-view-submit"
+  }
+}

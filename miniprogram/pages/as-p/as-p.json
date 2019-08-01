@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "摆渡留言",
+  "usingComponents": {
+    "text-left-icon": "/components/cover-text-left-icon/cover-text-left-icon",
+    "poster-code": "/components/poster-code/poster-code"
+  },
+  "backgroundColor": "#F6F6F6"
+}

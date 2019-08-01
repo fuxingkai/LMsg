@@ -1,0 +1,4 @@
+<view class="container">
+  <view class="title">{{title}}</view>
+  <input class='content' type="{{inputType}}" value="{{value}}" bindinput="bindConentInput" placeholder="{{placeholder}}" />
+</view>

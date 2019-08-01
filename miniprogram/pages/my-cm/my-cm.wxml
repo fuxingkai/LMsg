@@ -1,0 +1,4 @@
+<view class="container">
+  <common-list id="common-list" class="list_container" list="{{cms}}" loadMore="{{loadMore}}" generic:list-item="cm-item" bindonClickListItem="onClickMoreListItem" />
+  <auth-dialog />
+</view>

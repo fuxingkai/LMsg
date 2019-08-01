@@ -1,0 +1,9 @@
+{
+  "permissions":{
+    "openapi":[
+      "templateMessage.send"
+    ]
+  },
+  "triggers": [
+  ]
+}

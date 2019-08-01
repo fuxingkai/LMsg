@@ -1,0 +1,17 @@
+<view class="container">
+  <view class='top_container'>
+    <view class="title">{{title}}</view>
+    <view class="des">{{des}}</view>
+  </view>
+
+  <view class='lm_title_container'>
+    <view class='lm_title'>精选留言</view>
+    <view class='create_lm' bindtap="onClickAddComment">写留言</view>
+  </view>
+
+  <common-list id="common-list" class="list_container" list="{{lms}}" loadMore="{{loadMore}}" generic:list-item="lm-item" bindonClickListItem="onClickListItem" />
+</view>
+<view class="empty_container" hidden="{{isLoading||!isShowEmpty}}">
+  <image class="empty_image" src="{{'/images/ic_data_empty.png'}}" />
+  <view class="empty_text">该留言区已不存在</view>
+</view>

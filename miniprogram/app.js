@@ -43,6 +43,7 @@ var provider = Provider(store)({
    */
   defaultMiniAppCacheInfo: {
     wxUserInfo: {
+      "openId":"",
       "nickName": "",
       "gender": 0,
       "city": "",
@@ -50,7 +51,8 @@ var provider = Provider(store)({
       "country": "",
       "avatarUrl": ""
     },
-    userType:0
+    userType:0,
+    token:"",
   },
 
   /**
@@ -98,6 +100,20 @@ var provider = Provider(store)({
       console.log(e);
     }
     return this.miniAppCacheInfo;
+  },
+
+    /**
+   * 向后台上传formid
+   * @param {*} e 
+   */
+  postFormId: function postFormId(params) {
+    let miniAppCacheInfo = this.getMiniAppCacheInfo();
+    if (miniAppCacheInfo.token != "") {
+       params.token = miniAppCacheInfo.token;
+    }
+    this.api.user.postFormId(params).onSuccess(function (res) {
+      console.log(res);
+    }).onFail(function (error) {}).start();
   },
 });
 App(

@@ -12,7 +12,7 @@
 
 .title {
   color: #09bb07;
-  font-size: 28rpx;
+  font-size: 32rpx;
   margin-right: 15rpx;
 }
 

@@ -22,7 +22,7 @@
 .title {
   width: 100%;
   color: #333333;
-  font-size: 30rpx;
+  font-size: 36rpx;
   margin-bottom: 25rpx;
   flex-shrink: 0;
   text-align: left;
@@ -31,11 +31,12 @@
 .path_des {
   width: 100%;
   color: #999999;
-  font-size: 30rpx;
+  font-size: 32rpx;
   margin-bottom: 20rpx;
   flex-shrink: 0;
   text-align: left;
 }
+
 
 .path_container {
   flex-direction: row;
@@ -43,13 +44,14 @@
   background: #ffffff;
   flex-shrink: 0;
   height: 60rpx;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .path {
   height: 60rpx;
   line-height: 60rpx;
   font-size: 20rpx;
-  text-align: left;
   padding-left: 15rpx;
   padding-right: 15rpx;
   flex-grow: 1;
@@ -67,7 +69,7 @@
   height: 60rpx;
   line-height: 60rpx;
   white-space: nowrap;
-  font-size: 24rpx;
+  font-size: 28rpx;
   flex-shrink: 1;
   color: #ffffff;
   text-align: center;
@@ -86,7 +88,7 @@
 
 .number {
   color: #09bb07;
-  font-size: 24rpx;
+  font-size: 26rpx;
   flex-shrink: 1;
 }
 
@@ -98,7 +100,7 @@
 
 .create {
   color: #09bb07;
-  font-size: 28rpx;
+  font-size: 30rpx;
   flex-grow: 1;
   text-align: right;
 }
@@ -106,7 +108,7 @@
 .title_m {
   width: 100%;
   color: #333333;
-  font-size: 26rpx;
+  font-size: 32rpx;
   margin-bottom: 20rpx;
   text-align: left;
   flex-shrink: 0;
@@ -115,7 +117,8 @@
 .list_container {
   width: 100%;
   margin-top: 2rpx;
-  margin-bottom: 90rpx;
+  flex-shrink: 0;
+  padding-bottom: 110rpx;
 }
 
 .noread_title {
@@ -124,27 +127,30 @@
   color: #09bb07;
   margin-top: 1rpx;
   margin-bottom: 1rpx;
+  box-sizing: border-box;
   padding-left: 40rpx;
   background: #ffffff;
   line-height: 80rpx;
-  font-size: 22rpx;
+  font-size: 28rpx;
   text-align: left;
   flex-shrink: 0;
 }
 
 .noread_list_container {
   width: 100%;
+  flex-shrink: 0;
   margin-top: 2rpx;
 }
 
 .read_title {
   width: 100%;
   height: 80rpx;
+  box-sizing: border-box;
   padding-left: 40rpx;
   background: #ffffff;
   color: #999999;
   line-height: 80rpx;
-  font-size: 22rpx;
+  font-size: 28rpx;
   text-align: left;
   flex-shrink: 0;
 }
@@ -156,24 +162,14 @@
   z-index: 120;
   flex-direction: row;
   width: 100%;
-  background: #ffffff;
+  background: #f6f6f6;
   flex-shrink: 0;
-  height: 80rpx;
+  height: 100rpx;
   padding: 10rpx 20rpx;
+  box-sizing: border-box;
   justify-content:space-between;
 }
 
-.bottom_text{
-  width: 120rpx;
-  height: 60rpx;
-  line-height: 60rpx;
-  white-space: nowrap;
-  font-size: 24rpx;
-  flex-shrink: 1;
-  color: #ffffff;
-  text-align: center;
-  background-color: #09bb07;
-}
 
 
 page {

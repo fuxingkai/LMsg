@@ -13,7 +13,7 @@
 .title {
   width: 690rpx;
   color: #333;
-  font-size: 30rpx;
+  font-size: 32rpx;
   margin-bottom: 15rpx;
   overflow: hidden;
   text-align: left;

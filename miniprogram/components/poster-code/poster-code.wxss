@@ -12,7 +12,7 @@
 
 
 .save_btn {
-  font-size: 30rpx;
+  font-size: 34rpx;
   margin-top: 30rpx;
   padding-right: 20rpx;
   text-align: right;

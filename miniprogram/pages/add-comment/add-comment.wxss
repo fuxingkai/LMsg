@@ -15,7 +15,7 @@
   display: flex;
   width: 100%;
   color: #333;
-  font-size: 30rpx;
+  font-size: 36rpx;
   padding: 30rpx;
   flex-shrink: 0;
   text-align: left;
@@ -28,7 +28,7 @@
   background-color: #ffffff;
   box-sizing: border-box;
   padding: 30rpx;
-  font-size: 24rpx;
+  font-size: 30rpx;
   flex-shrink: 0;
   color: #666;
 }
@@ -49,8 +49,8 @@
 
 .btn_text {
   flex-shrink: 0;
-  font-size: 30rpx;
-  line-height: 30rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
 }

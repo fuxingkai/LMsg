@@ -1,4 +1,4 @@
-.container, .top_container, .title_container, .reply_container_input,
+.container, .top_container, .title_container,.content_container, .reply_container_input,
 .reply_container, .bottom_btn_container,.author_container ,.like_container{
   display: flex;
   justify-content: flex-start;
@@ -34,7 +34,7 @@
 
 .title {
   color: #666;
-  font-size: 28rpx;
+  font-size: 30rpx;
   overflow: hidden;
   text-align: left;
   text-overflow: ellipsis;
@@ -69,19 +69,25 @@
   flex-shrink: 0;
 }
 
+.content_container{
+  width: 100%;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding-left: 95rpx;
+  margin-top: -25rpx;
+  box-sizing: border-box;
+}
+
 .content {
   width: 100%;
-  margin-left: 95rpx;
-  font-size: 24rpx;
+  font-size: 26rpx;
   color: #777;
-  margin-top: -25rpx;
   margin-bottom: 15rpx;
 }
 
 .delete{
-  margin-left: 95rpx;
   color: #09bb07;
-  font-size: 22rpx;
+  font-size: 24rpx;
   flex-shrink: 0;
   margin-bottom:10rpx; 
 }
@@ -116,7 +122,7 @@
   height: 40rpx;
   line-height: 40rpx;
   color: #666;
-  font-size: 28rpx;
+  font-size: 30rpx;
   text-align: left;
   flex-grow: 1;
 }
@@ -126,13 +132,13 @@
   width: 100%;
   box-sizing: border-box;
   margin-top: 15rpx;
-  font-size: 24rpx;
+  font-size: 26rpx;
   flex-shrink: 0;
   color: #666;
 }
 
 .placeholder_class {
-  font-size: 24rpx;
+  font-size: 26rpx;
   color: #999;
 }
 

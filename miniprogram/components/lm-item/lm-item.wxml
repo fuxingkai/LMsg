@@ -9,20 +9,23 @@
     <image class="common_icon" src="{{item.isChoose?'/images/icon_choose_s.png':'/images/icon_choose_n.png'}}" data-item="{{item}}" bindtap="onClickChoose"></image>
     <image class="common_icon" src="{{item.reply.content!=''?'/images/icon_reply_s.png':'/images/icon_reply_n.png'}}" data-item="{{item}}" bindtap="onClickReply"></image>
   </view>
-  <view class="content">{{item.content}}</view>
-  <view class="reply_container_input" wx:if="{{isShowReplyInput}}" >
+  <view class="reply_container">
+    <view class="content">{{item.content}}</view>
+  </view>
+
+  <view class="reply_container_input" wx:if="{{isShowReplyInput}}">
     <view class="triangle_border_up"></view>
     <textarea class='reply_content_input' bindinput="bindConentInput" placeholder-class="placeholder_class" placeholder="{{placeholder}}" />
     <view class="bottom_btn_container">
-      <button-to-view-submit  data-item="{{item}}" bindonClickItem='onClickCancel'>
-        <view class="cancel" >取消</view>
+      <button-to-view-submit data-item="{{item}}" bindonClickItem='onClickCancel'>
+        <view class="cancel">取消</view>
       </button-to-view-submit>
-      <button-to-view-submit  data-item="{{item}}" bindonClickItem='onClickSend'>
-        <view class="send" >发送</view>
+      <button-to-view-submit data-item="{{item}}" bindonClickItem='onClickSend'>
+        <view class="send">发送</view>
       </button-to-view-submit>
     </view>
   </view>
-  <view class="reply_container" wx:if="{{item.reply.content!=''}}" >
+  <view class="reply_container" wx:if="{{item.reply.content!=''}}">
     <view class="triangle_border_up"></view>
     <view class='reply_content'>{{item.reply.content}}</view>
   </view>

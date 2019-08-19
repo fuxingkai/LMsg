@@ -9,7 +9,7 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding-bottom: 80rpx;
+  padding-bottom: 100rpx;
 }
 
 .top_container {
@@ -28,7 +28,7 @@
 .title {
   width: 100%;
   color: #333333;
-  font-size: 30rpx;
+  font-size: 36rpx;
   margin-bottom: 25rpx;
   flex-shrink: 0;
   text-align: left;
@@ -37,7 +37,7 @@
 .des {
   width: 100%;
   color: #999999;
-  font-size: 30rpx;
+  font-size: 32rpx;
   margin-bottom: 20rpx;
   flex-shrink: 0;
   text-align: left;
@@ -121,7 +121,7 @@
 .title_m {
   width: 100%;
   color: #09bb07;
-  font-size: 28rpx;
+  font-size: 32rpx;
   margin-top: 20rpx;
   text-align: left;
   flex-shrink: 0;
@@ -147,7 +147,7 @@
 .public_title {
   width: 100%;
   color: #999999;
-  font-size: 28rpx;
+  font-size: 32rpx;
   margin-top: 30rpx;
   margin-bottom: 30rpx;
   text-align: left;
@@ -167,9 +167,9 @@
   z-index: 120;
   flex-direction: row;
   width: 100%;
-  background: #ffffff;
+  background: #f6f6f6;
   flex-shrink: 0;
-  height: 80rpx;
+  height: 100rpx;
   padding: 10rpx 20rpx;
   justify-content:space-between;
 }

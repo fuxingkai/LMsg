@@ -33,7 +33,7 @@
 .title {
   width: 100%;
   color: #666666;
-  font-size: 28rpx;
+  font-size: 30rpx;
   margin-bottom: 15rpx;
   overflow: hidden;
   text-align: left;
@@ -47,17 +47,17 @@
 }
 
 .common_icon {
-  width: 32rpx;
-  height: 32rpx;
+  width: 48rpx;
+  height: 48rpx;
   margin-left: 15rpx;
   flex-shrink: 0;
 }
 
 .content {
   width: 100%;
-  margin-left: 95rpx;
-  font-size: 24rpx;
+  font-size: 26rpx;
   color: #777777;
+  box-sizing: border-box;
   margin-bottom: 15rpx;
 }
 
@@ -90,7 +90,7 @@
   background-color: #f2f2f2;
   box-sizing: border-box;
   padding: 10rpx;
-  font-size: 24rpx;
+  font-size: 26rpx;
   color: #666666;
 }
 
@@ -99,12 +99,12 @@
   background-color: #f2f2f2;
   box-sizing: border-box;
   padding: 10rpx;
-  font-size: 24rpx;
+  font-size: 26rpx;
   color: #666666;
 }
 
 .placeholder_class{
-  font-size: 24rpx;
+  font-size: 26rpx;
   color: #999999;
 }
 
@@ -116,9 +116,9 @@
 }
 
 .cancel{
-  height: 45rpx;
-  font-size: 20rpx;
-  line-height: 45rpx;
+  height: 60rpx;
+  font-size: 26rpx;
+  line-height: 60rpx;
   border-color: #09bb07;
   border-width: 1rpx;
   color: #09bb07;
@@ -130,9 +130,9 @@
 }
 
 .send{
-  height: 45rpx;
-  line-height: 45rpx;
-  font-size: 20rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 26rpx;
   margin-left: 30rpx;
   color: #ffffff;
   padding-left: 25rpx;

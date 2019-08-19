@@ -23,7 +23,7 @@
 .title {
   width: 100%;
   color: #333333;
-  font-size: 30rpx;
+  font-size: 36rpx;
   margin-bottom: 25rpx;
   flex-shrink: 0;
   text-align: left;
@@ -32,7 +32,7 @@
 .des {
   width: 100%;
   color: #999999;
-  font-size: 30rpx;
+  font-size: 32rpx;
   margin-bottom: 20rpx;
   flex-shrink: 0;
   text-align: left;

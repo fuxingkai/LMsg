@@ -13,7 +13,7 @@
 .title {
   width: 100%;
   color: #09bb07;
-  font-size: 28rpx;
+  font-size: 32rpx;
   flex-shrink: 1;
   margin-bottom: 20rpx;
 }
@@ -22,7 +22,7 @@
   width: 100%;
   height: 80rpx;
   line-height: 80rpx;
-  font-size: 28rpx;
+  font-size: 30rpx;
   text-align: left;
   font-weight: normal;
   border-radius: 10rpx;

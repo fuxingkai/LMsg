@@ -11,14 +11,17 @@
     </view>
 
   </view>
-  <view class="content">{{item.content}}</view>
-  <view class="delete" data-item="{{item}}" bindtap="onClickDelete" wx:if="{{isMineComment}}">删除</view>
+  <view class="content_container">
+    <view class="content">{{item.content}}</view>
+    <view class="delete" data-item="{{item}}" bindtap="onClickDelete" wx:if="{{isMineComment}}">删除</view>
+  </view>
+
   <view class="reply_container" wx:if="{{isHaseReply}}">
     <view class="author_container">
       <view class="v_line"></view>
       <view class="author">作者</view>
       <view class="like_container" id="replyLike" data-item="{{item}}" bindtap="onClickLike">
-        <image class="common_icon" src="{{item.reply.isLike?'/images/icon_like_s.png':'/images/icon_like_n.png'}}" ></image>
+        <image class="common_icon" src="{{item.reply.isLike?'/images/icon_like_s.png':'/images/icon_like_n.png'}}"></image>
         <view class="like">{{item.reply.like}}</view>
       </view>
 

@@ -32,7 +32,7 @@
 
 .create {
   color: #09bb07;
-  font-size: 28rpx;
+  font-size: 32rpx;
   flex-shrink: 1;
 }
 

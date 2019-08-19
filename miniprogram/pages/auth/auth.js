@@ -95,29 +95,26 @@ let pageConfig = {
     Promise.all([_that.postLogin()]).then(function (value) {
       console.log(value)
 
-      let userInfo = {};
-      userInfo.accid = value[1].data.accid;
-      userInfo.token = value[1].data.token;
-      userInfo.userId = value[0].data.datas.id;
-      userInfo.img = value[0].data.datas.member_avatar;
-      userInfo.name = value[0].data.datas.member_truename;
-      userInfo.mobile = value[0].data.datas.mobile;
-      userInfo.userKey = value[0].data.datas.user_key;
-      userInfo.weixinUnionid = value[0].data.datas.weixin_unionid;
-      userInfo.wx = value[0].data.datas.wx;
-
-
       //重设应用缓存
       let miniAppCacheInfo = app.getMiniAppCacheInfo();
-      miniAppCacheInfo.userInfo = userInfo;
+      let userInfo = {};
+      userInfo.id = value[0].data.data.id;
+      userInfo.openId = value[0].data.data.openId;
+      userInfo.nickName = value[0].data.data.nickName;
+      userInfo.city = value[0].data.data.city;
+      userInfo.province = value[0].data.data.province;
+      userInfo.country = value[0].data.data.mobile;
+      userInfo.avatarUrl = value[0].data.data.avatarUrl;
+      miniAppCacheInfo.userType = value[0].data.data.userType;
+      miniAppCacheInfo.token = value[0].data.data.token;
+      miniAppCacheInfo.wxUserInfo = userInfo;
       app.setMiniAppCacheInfo(miniAppCacheInfo);
 
       if (_that.data.formId != "") {
         let params = {};
-        params.form_id = _that.data.formId;
+        params.formId = _that.data.formId;
         app.postFormId(params);
       }
-
       
       wx.navigateBack({
         delta: 1

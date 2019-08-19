@@ -59,7 +59,14 @@ var provider = Provider(store)({
   siteInfo: require("siteinfo.js"),
 
   onShow: function(options) {
-
+    let _that = this;
+    wx.getSetting({
+      success(res) {
+        if (res.authSetting['scope.userInfo']) {
+          _that.checkSession();
+        }
+      }
+    })
   },
 
   onLaunch: function(opt) {
@@ -72,6 +79,47 @@ var provider = Provider(store)({
     }
 
   },
+
+  /**
+ * 检查用户会话状态，如果用户退出登录就重新进行登录
+ */
+  checkSession: function () {
+    let _that = this;
+    wx.checkSession({
+      success: function (res) {
+        console.log('checkSession success', res);
+      },
+      fail: function (res) {
+        console.log('checkSession fail', res);
+        wx.getUserInfo({
+          success: res => {
+            console.log("getUserInfo", res);
+            // 调用云函数
+            wx.cloud.callFunction({
+              name: "user",
+              data: {
+                "action": "login",
+                "wxUserInfo": res.userInfo
+              },
+              success: res => {
+                console.log("user", res);
+                _that.setMiniAppCacheInfo(res.result.data)
+                wx.navigateBack({
+                  delta: 1
+                });
+                wx.hideLoading();
+              },
+              fail: err => {
+                console.error('user', err)
+                wx.hideLoading();
+              }
+            })
+          }
+        })
+      }
+    })
+  },
+
   /**
    * 设置小程序缓存的信息
    */

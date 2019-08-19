@@ -11,7 +11,10 @@ let pageConfig = {
 
   onLoad: function (options) {
     if (options.jp == undefined || options.jp == null) {
-      options.jp = '%7B%22url%22%3A%22https%3A%2F%2Fmp.weixin.qq.com%2Fs%2FwogwZdQnpnT-_kmtEk2Jtw%22%7D'
+      let jp = {
+        url: "https://mp.weixin.qq.com/s/ph1EAq48kgTxBwXB4jmXog",
+      }
+      options.jp = encodeURIComponent(JSON.stringify(jp));
     }
     this.data.pageParams = JSON.parse(decodeURIComponent(options.jp));
     this.setData({

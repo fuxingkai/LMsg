@@ -87,7 +87,7 @@
 }
 
 .history_text {
-  line-height: 30rpx;
+  line-height: 32rpx;
   font-size: 32rpx;
   font-weight: 400;
   color: rgba(51, 51, 51, 1);
@@ -99,7 +99,7 @@
 
 .history_arrow_icon {
   width: 16rpx;
-  height: 30rpx;
+  height: 32rpx;
   flex-shrink: 0;
 }
 

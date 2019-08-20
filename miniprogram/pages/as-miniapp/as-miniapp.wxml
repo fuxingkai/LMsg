@@ -5,10 +5,10 @@
   <view class="title">公众号后台关联</view>
   <image class='oprate_bg' mode="aspectFit" src="{{oprateBg}}" />
   <view class="title">等待摆渡留言小程序管理员审核通过</view>
-  <view class="des">如未通过,微信联系：Fu-Franky</view>
+  <view class="des">如未通过,可去摆渡留言公众号留言</view>
   <view class="title">查看使用指导</view>
   <view class='copy' bindtap='onClickLook'>立即查看</view>
   <view class="title">联系管理员加入交流群</view>
-  <view class="des">加群,微信联系：Fu-Franky</view>
+  <view class="des">加群,可在摆渡留言公众号留言</view>
   <view class="bottom"></view>
 </view>

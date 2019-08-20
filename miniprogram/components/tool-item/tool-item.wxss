@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container {
+  flex-direction: row;
+  height: 100rpx;
+  padding: 20rpx;
+  background-color: #ffffff;
+}
+
+
+.text {
+  line-height: 32rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+
+.arrow_icon {
+  width: 16rpx;
+  height: 32rpx;
+  flex-shrink: 0;
+}

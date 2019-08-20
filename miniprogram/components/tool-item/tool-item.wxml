@@ -1,0 +1,4 @@
+<view class="container" bindtap="onClickItem">
+  <view class="text">{{title}}</view>
+  <image class="arrow_icon" src="{{'/images/icon-right-arrow.png'}}" />
+</view>

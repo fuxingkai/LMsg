@@ -1,0 +1,4 @@
+<view class="container">
+  <tool-item id="loanCalc" class="item_container" title="{{'贷款计算器'}}" bindonClickItem="onClickLoanCalc" />
+  <auth-dialog />
+</view>

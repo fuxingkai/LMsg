@@ -2,6 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/mine/mine",
+    "pages/tools/tools",
     "pages/auth/auth",
     "pages/add-ct/add-ct",
     "pages/edit-ct/edit-ct",
@@ -36,6 +37,12 @@
         "iconPath": "/images/icon_tab_index_normal.png",
         "selectedIconPath": "/images/icon_tab_index_select.png",
         "text": "留言"
+      },
+      {
+        "pagePath": "pages/tools/tools",
+        "iconPath": "/images/icon_tab_tool_normal.png",
+        "selectedIconPath": "/images/icon_tab_tool_select.png",
+        "text": "工具"
       },
       {
         "pagePath": "pages/mine/mine",

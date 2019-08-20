@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "auth-dialog": "/components/auth-dialog/auth-dialog",
+    "tool-item": "/components/tool-item/tool-item"
+  }
+  
+}

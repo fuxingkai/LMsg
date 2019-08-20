@@ -35,6 +35,12 @@ cloud.init({
   env: 'lmb-6ea1i'//把lmb-6ea1i改为自己小程序云开发环境
 })
 ```
+4. 打开云开发控制台，点击数据库，然后点击创建集合，分别创建以下集合：
+* commentLike
+* ct
+* ctComment
+* formId
+* userInfo
 
 
 # 微信扫码体验

@@ -1,0 +1,104 @@
+<view class="container">
+  <view class="common_column_container">
+    <view class="common_title">还款方式：</view>
+    <radio-group class="reimbursement_container" bindchange="radioChange">
+      <label class="reimbursement_radio">
+        <radio value="equal_interest" checked="true" /> 等额本息
+      </label>
+      <label class="reimbursement_radio">
+        <radio value="equal_principal" checked="false" /> 等额本金
+      </label>
+    </radio-group>
+  </view>
+  <view class="common_column_container">
+    <view class="common_title">商业贷款金额：</view>
+    <view class="money_container">
+      <input class='money_content' type="number" bindinput="bindMoneyInput" value="{{money}}" placeholder="请输入商业贷款金额" />
+      <view class="money_des">万元</view>
+    </view>
+  </view>
+  <view class="common_column_container">
+    <view class="common_title">商业贷款期限：</view>
+    <view class="money_container">
+      <picker class="select_time" mode="selector" bindchange="bindPickerTimesChange" value="{{timesIndex}}" range="{{times}}" range-key="name">
+        <view class="select_time">
+          {{times[timesIndex].name}}
+        </view>
+      </picker>
+      <image class="icon" src="{{'/images/icon_below.png'}}"></image>
+    </view>
+  </view>
+  <view class="common_column_container">
+    <view class="common_title">商业年利率：</view>
+    <view class="money_container">
+      <input class='money_content' type="digit" bindinput="bindRateInput" value="{{yearRate}}" placeholder="请输入商业贷款年利率,如4.9" />
+      <view class="money_des">%</view>
+    </view>
+  </view>
+  <view class="common_column_container">
+    <view class="common_title">商业利率折数：</view>
+    <view class="money_container">
+      <picker class="select_time" mode="selector" bindchange="bindPickerDiscountChange" value="{{discountsIndex}}" range="{{discounts}}" range-key="name">
+        <view class="select_time">
+          {{discounts[discountsIndex].name}}
+        </view>
+      </picker>
+      <image class="icon" src="{{'/images/icon_below.png'}}"></image>
+    </view>
+  </view>
+  <view class="common_column_container">
+    <view class="common_title">公积金贷款金额：</view>
+    <view class="money_container">
+      <input class='money_content' type="number" bindinput="bindAFMoneyInput" value="{{aFmoney}}" placeholder="请输入公积金贷款金额" />
+      <view class="money_des">万元</view>
+    </view>
+  </view>
+  <view class="common_column_container">
+    <view class="common_title">公积金贷款期限：</view>
+    <view class="money_container">
+      <picker class="select_time" mode="selector" bindchange="bindAFPickerTimesChange" value="{{aFtimesIndex}}" range="{{aFtimes}}" range-key="name">
+        <view class="select_time">
+          {{aFtimes[aFtimesIndex].name}}
+        </view>
+      </picker>
+      <image class="icon" src="{{'/images/icon_below.png'}}"></image>
+    </view>
+  </view>
+  <view class="common_column_container">
+    <view class="common_title">公积金年利率：</view>
+    <view class="money_container">
+      <input class='money_content' type="digit" bindinput="bindAFRateInput" value="{{aFyearRate}}" placeholder="请输入商业贷款年利率,如4.9" />
+      <view class="money_des">%</view>
+    </view>
+  </view>
+  <view class="common_column_container">
+    <view class="common_title">公积金利率折数：</view>
+    <view class="money_container">
+      <picker class="select_time" mode="selector" bindchange="bindAFPickerDiscountChange" value="{{aFdiscountsIndex}}" range="{{aFdiscounts}}" range-key="name">
+        <view class="select_time">
+          {{aFdiscounts[aFdiscountsIndex].name}}
+        </view>
+      </picker>
+      <image class="icon" src="{{'/images/icon_below.png'}}"></image>
+    </view>
+  </view>
+  <view class="common_btn_container">
+    <view class="submit" bindtap="onClickSubmit">开始计算</view>
+    <view class="reset" bindtap="onClickReset">重新填写</view>
+  </view>
+
+  <view class="attention">
+    注：
+  </view>
+  <view class="attention">
+    商业贷款从2011年2月9号之后，3-5年（年利率）为4.75%，5-30年（年利率）为4.90%
+  </view>
+  <view class="attention">
+    公积金贷款从2011年2月9号之后，3-5年（年利率）为2.75%，5-30年（年利率）为3.25%
+  </view>
+  <view class="attention">
+    首套房贷款利率8.5折，二套房房贷利率1.1倍。
+  </view>
+  <loan-clac-result id="loan-clac-result" wx:if="{{isShowResultPop}}" calcResultData="{{calcResultData}}" bindcloseclick="onClickPopClose" />
+
+</view>

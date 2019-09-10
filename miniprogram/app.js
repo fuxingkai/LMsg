@@ -104,9 +104,6 @@ var provider = Provider(store)({
               success: res => {
                 console.log("user", res);
                 _that.setMiniAppCacheInfo(res.result.data)
-                wx.navigateBack({
-                  delta: 1
-                });
                 wx.hideLoading();
               },
               fail: err => {

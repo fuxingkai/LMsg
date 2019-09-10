@@ -1,0 +1,149 @@
+.container, .common_column_container, .reimbursement_container,.money_container,.common_btn_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.container {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 30rpx;
+}
+
+.common_column_container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  width: 100%;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.reimbursement_container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+}
+
+.common_title {
+  height: 60rpx;
+  width: 150rpx;
+  text-align: right;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #1a173b;
+  flex-shrink: 0;
+  margin-right: 30rpx;
+}
+
+.reimbursement_radio {
+    font-size: 30rpx;
+    color: #1a173b;
+}
+
+
+.reimbursement_des {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #1a173b;
+  flex-shrink: 0;
+}
+
+.money_container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10rpx;
+  padding: 5rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 5rpx;
+  padding-bottom: 5rpx;
+  flex-grow: 1;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+
+
+.money_content {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  margin-right: 20rpx;
+}
+
+
+.money_des {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #1a173b;
+  flex-shrink: 0;
+}
+
+
+.select_time {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  margin-right: 20rpx;
+}
+
+.icon{
+  width: 48rpx;
+  height: 48rpx;
+}
+
+
+.common_btn_container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  width: 100%;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  margin-bottom: 10rpx;
+  margin-top: 30rpx;
+}
+
+.submit{
+  flex-grow: 1;
+  box-sizing: border-box;
+  background-color: #09bb07;
+  border-radius: 10rpx;
+  font-size: 32rpx;
+  padding: 15rpx;
+  text-align: center;
+  color: #ffffff;
+  margin-right: 30rpx;
+}
+
+.reset{
+  flex-grow: 1;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: #d81e06;
+  font-size: 32rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  padding: 15rpx;
+}
+
+.attention{
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: left;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: red;
+  flex-shrink: 0;
+}

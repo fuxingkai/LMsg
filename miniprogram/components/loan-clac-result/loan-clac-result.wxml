@@ -1,0 +1,26 @@
+<view class="pop_mask" catchtouchstart="onTouchmask"></view>
+<view class='float_container' catchtouchstart="onTouchmask">
+  <view class='pop_title'>计算结果</view>
+  <view class="pop_content_container">
+    <view class='pop_des'>贷款总额：
+      <span class="light_color">{{calcResultData.money}}</span> 元</view>
+    <view class='pop_des'>还款总额：
+      <span class="light_color">{{calcResultData.totalMoney}}</span> 元</view>
+    <view class='pop_des'>支付利息款：
+      <span class="light_color">{{calcResultData.totalInterest}}</span> 元</view>
+    <view class='pop_des'>贷款月数：
+      <span class="light_color">{{calcResultData.totalMonth}}</span> 月</view>
+    <view class='pop_des'>月均还款：
+      <span class="light_color">{{calcResultData.monthAlsoMoney!=0?calcResultData.monthAlsoMoney:''}}</span>{{calcResultData.monthAlsoMoney!=0?' 元':''}}</view>
+    <!-- <scroll-view class="pop_scroll" scroll-y wx:if="{{calcResultData.monthAlsoMoneys.length>0}}">
+      <block wx:for="{{calcResultData.monthAlsoMoneys}}" wx:for-item="item" wx:key="{{index}}">
+        <view class='pop_des'>第{{index+1}}个月，<span class="light_color">{{item}}</span>元</view>
+      </block>
+    </scroll-view> -->
+    <textarea class="pop_scroll" maxlength="-1" wx:if="{{calcResultData.monthAlsoMoneys.length>0}}" disabled="{{true}}" value="{{monthAlsoMoneys}}"/>
+  </view>
+  <view class='line'></view>
+  <button class='pop_submit_title' catchtouchend="onCloseClick">
+    关闭
+  </button>
+</view>

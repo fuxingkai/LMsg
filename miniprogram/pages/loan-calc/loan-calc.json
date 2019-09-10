@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "tab-loan-calc": "/components/tab-loan-calc/tab-loan-calc",
+    "house-commercial-loan": "/components/house-commercial-loan/house-commercial-loan",
+    "house-accumulation-fund-loan": "/components/house-accumulation-fund-loan/house-accumulation-fund-loan",
+    "house-combination-loan": "/components/house-combination-loan/house-combination-loan"
+  },
+  "navigationBarTitleText": "贷款计算器",
+  "backgroundColor": "#F6F6F6"
+}

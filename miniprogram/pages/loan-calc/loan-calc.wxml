@@ -1,0 +1,7 @@
+ <view class="container">
+    <tab-loan-calc class="tab_container" id="tab-loan-calc" cur_tab_id="{{tabLoanId}}" bindtabclick="onClickTabLoan" />
+    <house-commercial-loan class="calc_container" wx:if="{{tabLoanId=='house_commercial_loan'}}" />
+    <house-accumulation-fund-loan class="calc_container" wx:if="{{tabLoanId=='accumulation_fund_loan'}}" />
+    <house-combination-loan class="calc_container" wx:if="{{tabLoanId=='house_combination_loan'}}" />
+
+  </view>

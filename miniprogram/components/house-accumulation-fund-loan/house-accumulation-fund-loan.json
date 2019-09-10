@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "loan-clac-result": "/components/loan-clac-result/loan-clac-result"
+  }
+}

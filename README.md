@@ -30,11 +30,6 @@ https://mp.weixin.qq.com/s/wogwZdQnpnT-_kmtEk2Jtw
 2. 为自己的小程序开通云开发功能；
 3. 替换云开发环境，分别打开cloudfunctions目录下面的ct，templateMessage，user三个目录下面的index.js文件，替换里面的
 ```
-// 初始化 cloud
-cloud.init({
-  env: 'lmb-6ea1i'//把lmb-6ea1i改为自己小程序云开发环境
-})
-
 
 
 # 微信扫码体验
